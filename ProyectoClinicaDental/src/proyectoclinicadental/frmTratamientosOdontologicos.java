@@ -50,20 +50,27 @@ public class frmTratamientosOdontologicos extends javax.swing.JFrame {
         txtTratamiento = new javax.swing.JTextField();
         btnAgregarTratamiento = new javax.swing.JButton();
         btnAtrasTratamiento = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTemaTratamientos.setText("TRATAMIENTOS ODONTOLOGICOS");
+        getContentPane().add(lblTemaTratamientos, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 22, 324, 40));
 
         jScrollPane1.setViewportView(lstTratamientos);
 
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 270, 240));
+
         lblTratamiento.setText("Añadir tratamiento:");
+        getContentPane().add(lblTratamiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 80, 96, 30));
 
         txtTratamiento.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtTratamientoKeyTyped(evt);
             }
         });
+        getContentPane().add(txtTratamiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(164, 85, 230, -1));
 
         btnAgregarTratamiento.setText("AGREGAR");
         btnAgregarTratamiento.addActionListener(new java.awt.event.ActionListener() {
@@ -71,6 +78,7 @@ public class frmTratamientosOdontologicos extends javax.swing.JFrame {
                 btnAgregarTratamientoActionPerformed(evt);
             }
         });
+        getContentPane().add(btnAgregarTratamiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 398, -1, -1));
 
         btnAtrasTratamiento.setText("ATRAS");
         btnAtrasTratamiento.addActionListener(new java.awt.event.ActionListener() {
@@ -78,47 +86,10 @@ public class frmTratamientosOdontologicos extends javax.swing.JFrame {
                 btnAtrasTratamientoActionPerformed(evt);
             }
         });
+        getContentPane().add(btnAtrasTratamiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 398, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblTemaTratamientos, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(58, 58, 58)
-                            .addComponent(lblTratamiento, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(txtTratamiento, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(90, 90, 90)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(btnAgregarTratamiento)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnAtrasTratamiento))
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(58, 58, 58))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(lblTemaTratamientos, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblTratamiento, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtTratamiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAtrasTratamiento)
-                    .addComponent(btnAgregarTratamiento))
-                .addGap(22, 22, 22))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fundo-azul.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -193,6 +164,7 @@ public class frmTratamientosOdontologicos extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregarTratamiento;
     private javax.swing.JButton btnAtrasTratamiento;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblTemaTratamientos;
     private javax.swing.JLabel lblTratamiento;

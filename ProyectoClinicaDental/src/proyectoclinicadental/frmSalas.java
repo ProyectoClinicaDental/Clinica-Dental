@@ -25,6 +25,7 @@ public class frmSalas extends javax.swing.JFrame {
     public frmSalas() {
         initComponents();
         llenarlista();
+        this.setSize(410, 450);
     }
 
     /**
@@ -44,12 +45,17 @@ public class frmSalas extends javax.swing.JFrame {
         lblSalasActuales = new javax.swing.JLabel();
         btnAgregarSalas = new javax.swing.JButton();
         btnAtrasSalas = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblTemaSalas.setText("SALAS");
+        getContentPane().add(lblTemaSalas, new org.netbeans.lib.awtextra.AbsoluteConstraints(161, 22, -1, -1));
 
         lblSalas.setText("Nombre de nueva sala:");
+        getContentPane().add(lblSalas, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 68, -1, -1));
+        getContentPane().add(txtSala, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 65, 210, -1));
 
         lstSalasActuales.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -58,7 +64,10 @@ public class frmSalas extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(lstSalasActuales);
 
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 140, 230, -1));
+
         lblSalasActuales.setText("Salas Actuales");
+        getContentPane().add(lblSalasActuales, new org.netbeans.lib.awtextra.AbsoluteConstraints(161, 118, -1, -1));
 
         btnAgregarSalas.setText("AGREGAR");
         btnAgregarSalas.addActionListener(new java.awt.event.ActionListener() {
@@ -66,6 +75,7 @@ public class frmSalas extends javax.swing.JFrame {
                 btnAgregarSalasActionPerformed(evt);
             }
         });
+        getContentPane().add(btnAgregarSalas, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, -1));
 
         btnAtrasSalas.setText("ATRAS");
         btnAtrasSalas.addActionListener(new java.awt.event.ActionListener() {
@@ -73,54 +83,10 @@ public class frmSalas extends javax.swing.JFrame {
                 btnAtrasSalasActionPerformed(evt);
             }
         });
+        getContentPane().add(btnAtrasSalas, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnAgregarSalas)
-                .addGap(59, 59, 59)
-                .addComponent(btnAtrasSalas)
-                .addGap(96, 96, 96))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(161, 161, 161)
-                        .addComponent(lblTemaSalas))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(161, 161, 161)
-                        .addComponent(lblSalasActuales))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(129, 129, 129)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(lblSalas)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtSala, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(31, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(lblTemaSalas)
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtSala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblSalas))
-                .addGap(33, 33, 33)
-                .addComponent(lblSalasActuales)
-                .addGap(8, 8, 8)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnAgregarSalas)
-                    .addComponent(btnAtrasSalas))
-                .addContainerGap(30, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fundo-azul.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-180, -80, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -192,6 +158,7 @@ public class frmSalas extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregarSalas;
     private javax.swing.JButton btnAtrasSalas;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblSalas;
     private javax.swing.JLabel lblSalasActuales;

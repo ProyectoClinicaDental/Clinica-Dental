@@ -95,7 +95,7 @@ public class frmMenuPrincipal extends javax.swing.JFrame {
         getContentPane().add(lblMenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 193, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fundo-azul.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, -170, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, -50, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
