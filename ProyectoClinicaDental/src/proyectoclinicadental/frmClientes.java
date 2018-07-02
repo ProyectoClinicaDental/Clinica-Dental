@@ -103,6 +103,8 @@ public class frmClientes extends javax.swing.JFrame {
         });
         getContentPane().add(txtDireccionCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 340, 270, -1));
 
+        btnAgregarCliente.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnAgregarCliente.setForeground(java.awt.Color.green);
         btnAgregarCliente.setText("AGREGAR");
         btnAgregarCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,6 +113,8 @@ public class frmClientes extends javax.swing.JFrame {
         });
         getContentPane().add(btnAgregarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, 120, -1));
 
+        btnLimpiarCliente.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnLimpiarCliente.setForeground(java.awt.Color.cyan);
         btnLimpiarCliente.setText("LIMPIAR");
         btnLimpiarCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,6 +123,8 @@ public class frmClientes extends javax.swing.JFrame {
         });
         getContentPane().add(btnLimpiarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 420, 90, -1));
 
+        btnRegresarCliente.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnRegresarCliente.setForeground(java.awt.Color.red);
         btnRegresarCliente.setText("REGRESAR");
         btnRegresarCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -127,6 +133,8 @@ public class frmClientes extends javax.swing.JFrame {
         });
         getContentPane().add(btnRegresarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 420, 120, -1));
 
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton1.setForeground(java.awt.Color.blue);
         jButton1.setText("AÑADIR ELEMENTO AL HISTORIAL MÉDICO");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
