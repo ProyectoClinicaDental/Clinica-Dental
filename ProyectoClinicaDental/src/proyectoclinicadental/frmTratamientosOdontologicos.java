@@ -55,23 +55,36 @@ public class frmTratamientosOdontologicos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        lblTemaTratamientos.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblTemaTratamientos.setForeground(java.awt.Color.red);
         lblTemaTratamientos.setText("TRATAMIENTOS ODONTOLOGICOS");
         getContentPane().add(lblTemaTratamientos, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 22, 324, 40));
 
+        lstTratamientos.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jScrollPane1.setViewportView(lstTratamientos);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 270, 240));
 
+        lblTratamiento.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblTratamiento.setForeground(java.awt.Color.orange);
         lblTratamiento.setText("Añadir tratamiento:");
-        getContentPane().add(lblTratamiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 80, 96, 30));
+        getContentPane().add(lblTratamiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 170, 30));
 
+        txtTratamiento.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtTratamiento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTratamientoActionPerformed(evt);
+            }
+        });
         txtTratamiento.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtTratamientoKeyTyped(evt);
             }
         });
-        getContentPane().add(txtTratamiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(164, 85, 230, -1));
+        getContentPane().add(txtTratamiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, 230, -1));
 
+        btnAgregarTratamiento.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnAgregarTratamiento.setForeground(java.awt.Color.green);
         btnAgregarTratamiento.setText("AGREGAR");
         btnAgregarTratamiento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,6 +93,8 @@ public class frmTratamientosOdontologicos extends javax.swing.JFrame {
         });
         getContentPane().add(btnAgregarTratamiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 398, -1, -1));
 
+        btnAtrasTratamiento.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnAtrasTratamiento.setForeground(java.awt.Color.red);
         btnAtrasTratamiento.setText("ATRAS");
         btnAtrasTratamiento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,6 +128,10 @@ public class frmTratamientosOdontologicos extends javax.swing.JFrame {
         if(txtTratamiento.getText().length()==100)
             evt.consume();
     }//GEN-LAST:event_txtTratamientoKeyTyped
+
+    private void txtTratamientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTratamientoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTratamientoActionPerformed
 
     private void llenarlista(){        
         try{
