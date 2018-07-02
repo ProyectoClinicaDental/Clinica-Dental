@@ -56,12 +56,17 @@ public class frmHistorialCliente extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        lblTemaHistorial.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblTemaHistorial.setForeground(java.awt.Color.red);
         lblTemaHistorial.setText("Historial Medico");
         getContentPane().add(lblTemaHistorial, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 31, -1, -1));
 
+        lblHistorialMedico.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblHistorialMedico.setForeground(java.awt.Color.orange);
         lblHistorialMedico.setText("Historial Medico:");
         getContentPane().add(lblHistorialMedico, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 128, -1, -1));
 
+        txtHistorialMedico.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         txtHistorialMedico.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtHistorialMedicoKeyTyped(evt);
@@ -69,9 +74,12 @@ public class frmHistorialCliente extends javax.swing.JFrame {
         });
         getContentPane().add(txtHistorialMedico, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 122, 278, -1));
 
+        lblTratamientoMedico.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblTratamientoMedico.setForeground(java.awt.Color.orange);
         lblTratamientoMedico.setText("Tratamiento Medico:");
         getContentPane().add(lblTratamientoMedico, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 182, -1, -1));
 
+        txtTratamientoMedico.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         txtTratamientoMedico.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtTratamientoMedicoKeyTyped(evt);
@@ -79,12 +87,20 @@ public class frmHistorialCliente extends javax.swing.JFrame {
         });
         getContentPane().add(txtTratamientoMedico, new org.netbeans.lib.awtextra.AbsoluteConstraints(173, 176, 258, -1));
 
+        lblFechaInicio.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblFechaInicio.setForeground(java.awt.Color.orange);
         lblFechaInicio.setText("Fecha Inicio:");
-        getContentPane().add(lblFechaInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 243, -1, -1));
+        getContentPane().add(lblFechaInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 246, -1, 20));
 
+        txtFechaInicio.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         txtFechaInicio.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 txtFechaInicioFocusGained(evt);
+            }
+        });
+        txtFechaInicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFechaInicioActionPerformed(evt);
             }
         });
         txtFechaInicio.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -92,11 +108,14 @@ public class frmHistorialCliente extends javax.swing.JFrame {
                 txtFechaInicioKeyTyped(evt);
             }
         });
-        getContentPane().add(txtFechaInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 240, 112, -1));
+        getContentPane().add(txtFechaInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 112, -1));
 
+        lblFechaFin.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblFechaFin.setForeground(java.awt.Color.orange);
         lblFechaFin.setText("Fecha Fin:");
         getContentPane().add(lblFechaFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(247, 243, -1, -1));
 
+        txtFechaFin.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         txtFechaFin.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 txtFechaFinFocusGained(evt);
@@ -109,6 +128,8 @@ public class frmHistorialCliente extends javax.swing.JFrame {
         });
         getContentPane().add(txtFechaFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 240, 117, -1));
 
+        btnAgregarHistorial.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnAgregarHistorial.setForeground(java.awt.Color.green);
         btnAgregarHistorial.setText("AGREGAR");
         btnAgregarHistorial.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,14 +138,19 @@ public class frmHistorialCliente extends javax.swing.JFrame {
         });
         getContentPane().add(btnAgregarHistorial, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 286, -1, -1));
 
+        btnAtrasHistorial.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnAtrasHistorial.setForeground(java.awt.Color.red);
         btnAtrasHistorial.setText("ATRAS");
         getContentPane().add(btnAtrasHistorial, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 286, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel2.setForeground(java.awt.Color.orange);
         jLabel2.setText("Cliente:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 77, -1, -1));
 
+        jComboBox1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(99, 74, 332, -1));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 74, 320, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fundo-azul.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-130, -40, -1, -1));
@@ -182,6 +208,10 @@ public class frmHistorialCliente extends javax.swing.JFrame {
         if(txtFechaFin.getText().equals("dd/mm/aaaa"))
             txtFechaFin.setText("");
     }//GEN-LAST:event_txtFechaFinFocusGained
+
+    private void txtFechaInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaInicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFechaInicioActionPerformed
 
     private void llenarlista(){        
         try{
