@@ -58,12 +58,17 @@ public class frmFacturacion extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        lblFacturacion.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblFacturacion.setForeground(java.awt.Color.red);
         lblFacturacion.setText("FACTURACION");
         getContentPane().add(lblFacturacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 25, -1, -1));
 
+        lblFechaFactura.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblFechaFactura.setForeground(java.awt.Color.orange);
         lblFechaFactura.setText("Fecha:");
         getContentPane().add(lblFechaFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 73, -1, -1));
 
+        txtFechaFactura.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         txtFechaFactura.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 txtFechaFacturaFocusGained(evt);
@@ -76,9 +81,12 @@ public class frmFacturacion extends javax.swing.JFrame {
         });
         getContentPane().add(txtFechaFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 67, 105, -1));
 
+        lblHoraFactura.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblHoraFactura.setForeground(java.awt.Color.orange);
         lblHoraFactura.setText("Hora:");
         getContentPane().add(lblHoraFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(231, 73, -1, -1));
 
+        txtHoraFactura.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         txtHoraFactura.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 txtHoraFacturaFocusGained(evt);
@@ -91,21 +99,30 @@ public class frmFacturacion extends javax.swing.JFrame {
         });
         getContentPane().add(txtHoraFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 67, 95, -1));
 
+        lblCitaFactura.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblCitaFactura.setForeground(java.awt.Color.orange);
         lblCitaFactura.setText("Cita:");
         getContentPane().add(lblCitaFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 132, -1, -1));
 
+        cmbCitaFactura.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         cmbCitaFactura.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         getContentPane().add(cmbCitaFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 127, 144, -1));
 
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel5.setForeground(java.awt.Color.orange);
         jLabel5.setText("Historial de Cliente:");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 182, -1, -1));
 
+        cmbHistorialCFactura.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         cmbHistorialCFactura.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         getContentPane().add(cmbHistorialCFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 129, -1));
 
+        lblCostoFactura.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblCostoFactura.setForeground(java.awt.Color.orange);
         lblCostoFactura.setText("Costo:");
         getContentPane().add(lblCostoFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 235, -1, -1));
 
+        txtCostoFactura.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         txtCostoFactura.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtCostoFacturaKeyTyped(evt);
@@ -113,9 +130,12 @@ public class frmFacturacion extends javax.swing.JFrame {
         });
         getContentPane().add(txtCostoFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 229, 93, -1));
 
+        lblDetallesFactura.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblDetallesFactura.setForeground(java.awt.Color.orange);
         lblDetallesFactura.setText("Otros Detalles:");
         getContentPane().add(lblDetallesFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 286, -1, -1));
 
+        txtDetallesFactura.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         txtDetallesFactura.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtDetallesFacturaKeyTyped(evt);
@@ -123,6 +143,8 @@ public class frmFacturacion extends javax.swing.JFrame {
         });
         getContentPane().add(txtDetallesFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 224, -1));
 
+        btnAgregarFactura.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnAgregarFactura.setForeground(java.awt.Color.green);
         btnAgregarFactura.setText("AGREGAR");
         btnAgregarFactura.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,6 +153,8 @@ public class frmFacturacion extends javax.swing.JFrame {
         });
         getContentPane().add(btnAgregarFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 353, -1, -1));
 
+        btnAtrasFactura.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnAtrasFactura.setForeground(java.awt.Color.red);
         btnAtrasFactura.setText("ATRAS");
         btnAtrasFactura.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
