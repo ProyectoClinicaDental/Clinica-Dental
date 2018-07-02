@@ -50,13 +50,18 @@ public class frmSalas extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        lblTemaSalas.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblTemaSalas.setForeground(java.awt.Color.red);
         lblTemaSalas.setText("SALAS");
         getContentPane().add(lblTemaSalas, new org.netbeans.lib.awtextra.AbsoluteConstraints(161, 22, -1, -1));
 
+        lblSalas.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblSalas.setForeground(java.awt.Color.orange);
         lblSalas.setText("Nombre de nueva sala:");
         getContentPane().add(lblSalas, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 68, -1, -1));
         getContentPane().add(txtSala, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 65, 210, -1));
 
+        lstSalasActuales.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         lstSalasActuales.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -66,9 +71,13 @@ public class frmSalas extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 140, 230, -1));
 
+        lblSalasActuales.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lblSalasActuales.setForeground(java.awt.Color.orange);
         lblSalasActuales.setText("Salas Actuales");
         getContentPane().add(lblSalasActuales, new org.netbeans.lib.awtextra.AbsoluteConstraints(161, 118, -1, -1));
 
+        btnAgregarSalas.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnAgregarSalas.setForeground(java.awt.Color.green);
         btnAgregarSalas.setText("AGREGAR");
         btnAgregarSalas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,6 +86,8 @@ public class frmSalas extends javax.swing.JFrame {
         });
         getContentPane().add(btnAgregarSalas, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, -1));
 
+        btnAtrasSalas.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnAtrasSalas.setForeground(java.awt.Color.red);
         btnAtrasSalas.setText("ATRAS");
         btnAtrasSalas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
